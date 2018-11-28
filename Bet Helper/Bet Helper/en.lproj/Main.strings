@@ -1,0 +1,15 @@
+
+/* Class = "UITabBarItem"; title = "Calculator"; ObjectID = "XRh-RP-WAa"; */
+"XRh-RP-WAa.title" = "Calculator";
+
+/* Class = "UITabBarItem"; title = "Favorite teams"; ObjectID = "YWO-dn-be9"; */
+"YWO-dn-be9.title" = "Favorite teams";
+
+/* Class = "UITabBarItem"; title = "All league"; ObjectID = "ehJ-o3-eaE"; */
+"ehJ-o3-eaE.title" = "All league";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "wJu-sf-T0n"; */
+"wJu-sf-T0n.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Since"; ObjectID = "wLW-nV-Obh"; */
+"wLW-nV-Obh.title" = "Since";

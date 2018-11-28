@@ -15,6 +15,13 @@
 		FE60798D21AEBC6F007EA32A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE60798B21AEBC6F007EA32A /* LaunchScreen.storyboard */; };
 		FE60799821AEBC70007EA32A /* Bet_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE60799721AEBC70007EA32A /* Bet_HelperTests.swift */; };
 		FE6079A321AEBC70007EA32A /* Bet_HelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6079A221AEBC70007EA32A /* Bet_HelperUITests.swift */; };
+		FE6079B221AEBE4B007EA32A /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6079B021AEBE4B007EA32A /* MainTableViewCell.swift */; };
+		FE6079B321AEBE4B007EA32A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6079B121AEBE4B007EA32A /* MainTableViewCell.xib */; };
+		FE6079B821AECCD7007EA32A /* Endgland.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6079B721AECCD7007EA32A /* Endgland.png */; };
+		FE6079BE21AED02A007EA32A /* Spain.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6079BD21AED029007EA32A /* Spain.png */; };
+		FE6079C021AED032007EA32A /* Italy.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6079BF21AED032007EA32A /* Italy.png */; };
+		FE6079C421AED0A4007EA32A /* France.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6079C321AED0A4007EA32A /* France.png */; };
+		FE6079C621AED14E007EA32A /* Germany.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6079C521AED14E007EA32A /* Germany.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		FE60799E21AEBC70007EA32A /* Bet HelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bet HelperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6079A221AEBC70007EA32A /* Bet_HelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet_HelperUITests.swift; sourceTree = "<group>"; };
 		FE6079A421AEBC70007EA32A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6079B021AEBE4B007EA32A /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		FE6079B121AEBE4B007EA32A /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		FE6079B721AECCD7007EA32A /* Endgland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Endgland.png; sourceTree = "<group>"; };
+		FE6079BD21AED029007EA32A /* Spain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spain.png; sourceTree = "<group>"; };
+		FE6079BF21AED032007EA32A /* Italy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Italy.png; sourceTree = "<group>"; };
+		FE6079C321AED0A4007EA32A /* France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = France.png; sourceTree = "<group>"; };
+		FE6079C521AED14E007EA32A /* Germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Germany.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +116,9 @@
 				FE60797F21AEBC6E007EA32A /* AppDelegate.swift */,
 				FE60798121AEBC6E007EA32A /* ViewController.swift */,
 				FE60798321AEBC6E007EA32A /* Main.storyboard */,
+				FE6079B021AEBE4B007EA32A /* MainTableViewCell.swift */,
+				FE6079B121AEBE4B007EA32A /* MainTableViewCell.xib */,
+				FE6079B621AEC249007EA32A /* Flag */,
 				FE60798921AEBC6F007EA32A /* Assets.xcassets */,
 				FE60798B21AEBC6F007EA32A /* LaunchScreen.storyboard */,
 				FE60798E21AEBC6F007EA32A /* Info.plist */,
@@ -126,6 +143,18 @@
 				FE6079A421AEBC70007EA32A /* Info.plist */,
 			);
 			path = "Bet HelperUITests";
+			sourceTree = "<group>";
+		};
+		FE6079B621AEC249007EA32A /* Flag */ = {
+			isa = PBXGroup;
+			children = (
+				FE6079B721AECCD7007EA32A /* Endgland.png */,
+				FE6079BD21AED029007EA32A /* Spain.png */,
+				FE6079C521AED14E007EA32A /* Germany.png */,
+				FE6079C321AED0A4007EA32A /* France.png */,
+				FE6079BF21AED032007EA32A /* Italy.png */,
+			);
+			path = Flag;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +262,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE60798D21AEBC6F007EA32A /* LaunchScreen.storyboard in Resources */,
+				FE6079C021AED032007EA32A /* Italy.png in Resources */,
+				FE6079B821AECCD7007EA32A /* Endgland.png in Resources */,
 				FE60798A21AEBC6F007EA32A /* Assets.xcassets in Resources */,
+				FE6079C421AED0A4007EA32A /* France.png in Resources */,
+				FE6079B321AEBE4B007EA32A /* MainTableViewCell.xib in Resources */,
 				FE60798521AEBC6E007EA32A /* Main.storyboard in Resources */,
+				FE6079BE21AED02A007EA32A /* Spain.png in Resources */,
+				FE6079C621AED14E007EA32A /* Germany.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +296,7 @@
 			files = (
 				FE60798221AEBC6E007EA32A /* ViewController.swift in Sources */,
 				FE60798021AEBC6E007EA32A /* AppDelegate.swift in Sources */,
+				FE6079B221AEBE4B007EA32A /* MainTableViewCell.swift in Sources */,
 				FE60798821AEBC6E007EA32A /* Bet_Helper.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
