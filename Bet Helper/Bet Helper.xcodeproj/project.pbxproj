@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE60798021AEBC6E007EA32A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE60797F21AEBC6E007EA32A /* AppDelegate.swift */; };
-		FE60798221AEBC6E007EA32A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE60798121AEBC6E007EA32A /* ViewController.swift */; };
+		FE60798221AEBC6E007EA32A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE60798121AEBC6E007EA32A /* MainViewController.swift */; };
 		FE60798521AEBC6E007EA32A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE60798321AEBC6E007EA32A /* Main.storyboard */; };
 		FE60798821AEBC6E007EA32A /* Bet_Helper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE60798621AEBC6E007EA32A /* Bet_Helper.xcdatamodeld */; };
 		FE60798A21AEBC6F007EA32A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE60798921AEBC6F007EA32A /* Assets.xcassets */; };
@@ -17,11 +17,12 @@
 		FE6079A321AEBC70007EA32A /* Bet_HelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6079A221AEBC70007EA32A /* Bet_HelperUITests.swift */; };
 		FE6079B221AEBE4B007EA32A /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6079B021AEBE4B007EA32A /* MainTableViewCell.swift */; };
 		FE6079B321AEBE4B007EA32A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6079B121AEBE4B007EA32A /* MainTableViewCell.xib */; };
-		FE6079B821AECCD7007EA32A /* Endgland.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6079B721AECCD7007EA32A /* Endgland.png */; };
-		FE6079BE21AED02A007EA32A /* Spain.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6079BD21AED029007EA32A /* Spain.png */; };
-		FE6079C021AED032007EA32A /* Italy.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6079BF21AED032007EA32A /* Italy.png */; };
-		FE6079C421AED0A4007EA32A /* France.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6079C321AED0A4007EA32A /* France.png */; };
-		FE6079C621AED14E007EA32A /* Germany.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6079C521AED14E007EA32A /* Germany.png */; };
+		FEAB770D21BA8B5A00612811 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAB770C21BA8B5A00612811 /* CoreDataStack.swift */; };
+		FECBF4EB2212F83C00ED9AC4 /* MatchesInLeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBF4EA2212F83C00ED9AC4 /* MatchesInLeagueViewController.swift */; };
+		FECBF4F12212FDC400ED9AC4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBF4F02212FDC400ED9AC4 /* DataManager.swift */; };
+		FECBF4F82213153100ED9AC4 /* League+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBF4F62213153100ED9AC4 /* League+CoreDataClass.swift */; };
+		FECBF4F92213153100ED9AC4 /* League+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECBF4F72213153100ED9AC4 /* League+CoreDataProperties.swift */; };
+		FEE78304220C74120092B084 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE78303220C74120092B084 /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,7 @@
 /* Begin PBXFileReference section */
 		FE60797C21AEBC6E007EA32A /* Bet Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bet Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE60797F21AEBC6E007EA32A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE60798121AEBC6E007EA32A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE60798121AEBC6E007EA32A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FE60798421AEBC6E007EA32A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE60798721AEBC6E007EA32A /* Bet_Helper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bet_Helper.xcdatamodel; sourceTree = "<group>"; };
 		FE60798921AEBC6F007EA32A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,11 +59,12 @@
 		FE6079A421AEBC70007EA32A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE6079B021AEBE4B007EA32A /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		FE6079B121AEBE4B007EA32A /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
-		FE6079B721AECCD7007EA32A /* Endgland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Endgland.png; sourceTree = "<group>"; };
-		FE6079BD21AED029007EA32A /* Spain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spain.png; sourceTree = "<group>"; };
-		FE6079BF21AED032007EA32A /* Italy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Italy.png; sourceTree = "<group>"; };
-		FE6079C321AED0A4007EA32A /* France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = France.png; sourceTree = "<group>"; };
-		FE6079C521AED14E007EA32A /* Germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Germany.png; sourceTree = "<group>"; };
+		FEAB770C21BA8B5A00612811 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		FECBF4EA2212F83C00ED9AC4 /* MatchesInLeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesInLeagueViewController.swift; sourceTree = "<group>"; };
+		FECBF4F02212FDC400ED9AC4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = "Bet Helper/Model/DataManager.swift"; sourceTree = SOURCE_ROOT; };
+		FECBF4F62213153100ED9AC4 /* League+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "League+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FECBF4F72213153100ED9AC4 /* League+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "League+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FEE78303220C74120092B084 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE2E58F521BA8A6F00D6CB52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEE78303220C74120092B084 /* MainController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		FE60797321AEBC6D007EA32A = {
 			isa = PBXGroup;
 			children = (
@@ -113,16 +123,12 @@
 		FE60797E21AEBC6E007EA32A /* Bet Helper */ = {
 			isa = PBXGroup;
 			children = (
-				FE60797F21AEBC6E007EA32A /* AppDelegate.swift */,
-				FE60798121AEBC6E007EA32A /* ViewController.swift */,
-				FE60798321AEBC6E007EA32A /* Main.storyboard */,
-				FE6079B021AEBE4B007EA32A /* MainTableViewCell.swift */,
-				FE6079B121AEBE4B007EA32A /* MainTableViewCell.xib */,
-				FE6079B621AEC249007EA32A /* Flag */,
-				FE60798921AEBC6F007EA32A /* Assets.xcassets */,
-				FE60798B21AEBC6F007EA32A /* LaunchScreen.storyboard */,
-				FE60798E21AEBC6F007EA32A /* Info.plist */,
-				FE60798621AEBC6E007EA32A /* Bet_Helper.xcdatamodeld */,
+				FEAB770E21BA8B7400612811 /* Model */,
+				FEAB770B21BA8AF100612811 /* View */,
+				FE2E58F521BA8A6F00D6CB52 /* Controller */,
+				FEFD2D2C2203179A00761A7B /* Resources */,
+				FEFD2D2E2203193300761A7B /* SupportingFiles */,
+				FEFD2D2F2203196600761A7B /* CoreData */,
 			);
 			path = "Bet Helper";
 			sourceTree = "<group>";
@@ -145,16 +151,61 @@
 			path = "Bet HelperUITests";
 			sourceTree = "<group>";
 		};
-		FE6079B621AEC249007EA32A /* Flag */ = {
+		FEAB770B21BA8AF100612811 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FE6079B721AECCD7007EA32A /* Endgland.png */,
-				FE6079BD21AED029007EA32A /* Spain.png */,
-				FE6079C521AED14E007EA32A /* Germany.png */,
-				FE6079C321AED0A4007EA32A /* France.png */,
-				FE6079BF21AED032007EA32A /* Italy.png */,
+				FE60798321AEBC6E007EA32A /* Main.storyboard */,
+				FECBF4EA2212F83C00ED9AC4 /* MatchesInLeagueViewController.swift */,
+				FE60798121AEBC6E007EA32A /* MainViewController.swift */,
+				FEFD2D2D2203189500761A7B /* MainTableViewCell */,
 			);
-			path = Flag;
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEAB770E21BA8B7400612811 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FECBF4F02212FDC400ED9AC4 /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEFD2D2C2203179A00761A7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE60798921AEBC6F007EA32A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FEFD2D2D2203189500761A7B /* MainTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FE6079B021AEBE4B007EA32A /* MainTableViewCell.swift */,
+				FE6079B121AEBE4B007EA32A /* MainTableViewCell.xib */,
+			);
+			path = MainTableViewCell;
+			sourceTree = "<group>";
+		};
+		FEFD2D2E2203193300761A7B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FE60797F21AEBC6E007EA32A /* AppDelegate.swift */,
+				FE60798B21AEBC6F007EA32A /* LaunchScreen.storyboard */,
+				FE60798E21AEBC6F007EA32A /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FEFD2D2F2203196600761A7B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FECBF4F62213153100ED9AC4 /* League+CoreDataClass.swift */,
+				FECBF4F72213153100ED9AC4 /* League+CoreDataProperties.swift */,
+				FE60798621AEBC6E007EA32A /* Bet_Helper.xcdatamodeld */,
+				FEAB770C21BA8B5A00612811 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,14 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE60798D21AEBC6F007EA32A /* LaunchScreen.storyboard in Resources */,
-				FE6079C021AED032007EA32A /* Italy.png in Resources */,
-				FE6079B821AECCD7007EA32A /* Endgland.png in Resources */,
 				FE60798A21AEBC6F007EA32A /* Assets.xcassets in Resources */,
-				FE6079C421AED0A4007EA32A /* France.png in Resources */,
 				FE6079B321AEBE4B007EA32A /* MainTableViewCell.xib in Resources */,
 				FE60798521AEBC6E007EA32A /* Main.storyboard in Resources */,
-				FE6079BE21AED02A007EA32A /* Spain.png in Resources */,
-				FE6079C621AED14E007EA32A /* Germany.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,9 +340,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE60798221AEBC6E007EA32A /* ViewController.swift in Sources */,
+				FECBF4F92213153100ED9AC4 /* League+CoreDataProperties.swift in Sources */,
+				FECBF4EB2212F83C00ED9AC4 /* MatchesInLeagueViewController.swift in Sources */,
+				FECBF4F12212FDC400ED9AC4 /* DataManager.swift in Sources */,
+				FEAB770D21BA8B5A00612811 /* CoreDataStack.swift in Sources */,
+				FE60798221AEBC6E007EA32A /* MainViewController.swift in Sources */,
+				FECBF4F82213153100ED9AC4 /* League+CoreDataClass.swift in Sources */,
 				FE60798021AEBC6E007EA32A /* AppDelegate.swift in Sources */,
 				FE6079B221AEBE4B007EA32A /* MainTableViewCell.swift in Sources */,
+				FEE78304220C74120092B084 /* MainController.swift in Sources */,
 				FE60798821AEBC6E007EA32A /* Bet_Helper.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,7 +526,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9GW49H8XYF;
-				INFOPLIST_FILE = "Bet Helper/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Bet Helper/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,7 +544,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9GW49H8XYF;
-				INFOPLIST_FILE = "Bet Helper/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Bet Helper/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

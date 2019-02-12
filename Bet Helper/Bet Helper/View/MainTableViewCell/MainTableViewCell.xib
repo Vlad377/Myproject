@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="343" height="82.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Germany.png" translatesAutoresizingMaskIntoConstraints="NO" id="YpO-cD-iwO">
+                    <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YpO-cD-iwO">
                         <rect key="frame" x="0.0" y="0.0" width="343" height="83"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2Y-Jh-OiC">
@@ -48,7 +48,4 @@
             <point key="canvasLocation" x="40" y="18.440779610194905"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Germany.png" width="302" height="181"/>
-    </resources>
 </document>
