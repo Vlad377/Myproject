@@ -7,9 +7,14 @@
 //
 
 import UIKit
-class MainViewController: UIViewController {    
-    //MARK: IBOutlet
+class MainViewController: UIViewController {
+    
+    //MARK: Properties
+    static let shared = MainViewController()
+    var indexLeague:Int = 2
     var nameOfLeague: [String] = []
+    
+    //MARK: IBOutlet
     @IBOutlet weak var leagueTableView: UITableView!
     
     override func viewDidLoad() {
@@ -17,9 +22,11 @@ class MainViewController: UIViewController {
         setupTableView()
         startJSON()
     }
+    
     private func setupTableView() {
         leagueTableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
+    
     private func startJSON() {
         DispatchQueue.global().async {
             let httpUrl = "https://api-football-v1.p.rapidapi.com/leagues"
@@ -39,9 +46,7 @@ class MainViewController: UIViewController {
                     let model = try decoder.decode(ApiData.self, from:
                         dataResponse)
                     for index in 1...model.api.results {
-                        if model.api.leagues["\(index)"]?.season == "2017"{
-                        self.nameOfLeague.append((model.api.leagues["\(index)"]?.name ?? "") + (model.api.leagues["\(index)"]?.leagueId ?? ""))
-                        }
+                        self.nameOfLeague.append((model.api.leagues["\(index)"]?.name ?? ""))
                     }
                     DispatchQueue.main.async {
                         self.leagueTableView.reloadData()
@@ -54,22 +59,27 @@ class MainViewController: UIViewController {
         }
     }
 }
+
 //MARK: Extension
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.bounds.size.height / 5
+        return tableView.bounds.size.height / 8
     }
     //MARK: Data Source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return nameOfLeague.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = leagueTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? MainTableViewCell else {
             return UITableViewCell()
         }
         cell.nameLeagueLabel.text = nameOfLeague[indexPath.row]
+        indexLeague = indexPath.row
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "presentMatchesInLeague", sender: self)
     }

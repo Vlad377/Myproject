@@ -7,6 +7,8 @@
 //
 
 import UIKit
+class MainController {
+}
 final class ApiData {
     var api: Leagues
     init(api: Leagues) {
@@ -38,8 +40,7 @@ final class DataLeagues {
         self.seasonEnd = seasonEnd
     }
 }
-class MainController {
-}
+
 extension ApiData: Decodable {
     private enum Key: String, CodingKey {
         case api
